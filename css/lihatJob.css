@@ -1,0 +1,202 @@
+body{
+    background-color: #f2ebeb;
+}
+.section1-lj{
+    margin-bottom: 40px;
+}
+.content2-lj{
+    width: calc(100% - 300px);
+}
+.divContent2Lj-1{
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+#formSearchLj{
+    position: relative;
+}
+#formSearchLj input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #c5c3c3;
+}
+#formSearchLj input:focus{
+   outline: none;
+    border: 1px solid #11B1E3;
+}
+#formSearchLj button{
+  border: none;
+  background-color: #11B1E3;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 0px 10px 10px 0px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  z-index: 1;
+}
+
+.divSortir-lj{
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+}
+.divSortir-lj span,.ulSortir-lj li a{
+    color: #666666ce;
+}
+.dropSortir-lj{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.iconDrop{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-left: 5px;
+}
+.ulSortir-lj{
+ position: absolute;
+ background-color: #ffffff;
+ border: 1px solid #c5c3c3;
+ border-radius: 5px;
+ width: 150px;
+ display: none;
+ z-index: 10;
+}
+.ulSortir-lj li{
+    list-style-type: none;
+}
+.ulSortir-lj li a{
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+}
+
+
+.divContent-job{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.divContent-job:hover{
+    outline: 2px solid #11B1E3;
+}
+.judulContent-lj{
+    width:50% ;
+}
+.imgJudul-lj{
+    width: max-content;
+    padding-left: 20px;
+}
+.imgJudul-lj li{
+    position: relative;
+    border-radius: 100%;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #11B1E3;
+    font-size: 80px;
+    
+}
+.icon-dalam{
+    font-size: 25px;
+    position: absolute;
+    top:30%;
+    left:38%;
+}
+.judulContent-lj h3{
+    font-size: 1.5rem;
+}
+.judulContent-lj a{
+    text-decoration: none;
+    color: #11B1E3;
+    font-weight: bold;
+}
+.div-lj{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.div-lj div{
+    display: flex;
+    align-items: center;
+    flex: 50%;
+    padding: 10px;
+}
+.div-lj div span{
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.div-lj div i{
+    color: #11B1E3;
+    display: inline-block;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 1197px) {
+    
+    .container1-lj{
+        margin-top: 70px;
+        display: block;
+       overflow-x: auto;
+        width: inherit;
+        padding: 20px;
+    
+    }
+    .content1-lj{
+        display: flex;
+        width: 99.9%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .divJudulKatagori-lj{
+        flex: 100%;
+    }
+    .divSemuaKatagori-lj,.divKatagori-lj{
+        flex: 10%;
+    }
+    .divSemuaKatagori-lj >a,.divKatagori-lj >a{
+      padding: 5px 20px;
+    }
+    .divKatagori-lj span{
+      right: 5px;
+      top: 5px;
+    }
+    .ulSubkatagori-lj div{
+      display: flex;
+      flex-wrap: wrap;
+      width: 90vw;
+    }
+    .ulSubkatagori-lj  li{
+        flex: 20%;
+    }
+    
+    .content2-lj{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 859px) {
+    .divSemuaKatagori-lj,.divKatagori-lj{
+        flex: 25%;
+    }
+    .divContent-job{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .divJumlah-lj{
+        flex-wrap: wrap;
+    }
+}
+

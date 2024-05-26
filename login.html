@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="library/jquery.js"></script>
+    <script src="functionJq.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styleUmum.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <section class="section-login">
+        <div class="container-login">
+            <div class="content-login-img">
+                <i class='bx bxs-log-in-circle'></i>
+            </div>
+            <form class="form-login" action="">
+                <div>
+                    <label for="email-login">
+                        <i class='bx bxs-user login-icon'></i>
+                    </label>
+                    <input id="email-login" class="input-login" type="text" placeholder="Email / Username" required>
+                </div>
+                <div>
+                    <label for="password-login">
+                        <i class='bx bxs-lock login-icon'></i>
+                    </label>
+                    <input id="password-login" class="input-login" type="password" placeholder="Password" required><i
+                        class='bx bxs-hide login-showPassword' id="showPassword"></i>
+                    <a href="lupaPassword.html" class="button-lupaPassword">Lupa Password?</a>
+                </div>
+                <div class="div-button-login">
+                    <input class="button-login" type="submit" value="LOG IN">
+                </div>
+            </form>
+            <div class="div-loginDaftar">
+                <a href="daftarClient.html">Daftar <p class="color-biruMuda">klien</p></a>
+                <div class="login-divKosong"></div>
+                <a href="daftarFreelancer.html">Daftar <p class="color-biruMuda">Freelancer</p></a>
+            </div>
+        </div>
+        <div class="container-segitiga">
+            <div class="login-segitiga">
+            </div>
+            <a href="index.html" id="logo-login">Freeversa</a>
+        </div>
+    </section>
+</body>
+
+</html>

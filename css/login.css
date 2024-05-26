@@ -1,0 +1,238 @@
+.section-login{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 80px;
+}
+body{
+    background-image: url('../../Sang Putu Mardiana_Bahan/ilustrationDaun.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-login{
+    background-color: #11B1E3;
+    position: relative;
+    width: 400px;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px inset #ffffff;
+    z-index: 1;
+}
+.color-biruMuda{
+    color: #11B1E3;
+}
+.content-login-img {
+    width: 50%;
+    left: 26%;
+    top: -100px;
+    position: absolute;
+    border-bottom: 8px solid white;
+    background-color: #11B1E3;
+    text-align: center;
+    padding: 20px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px  inset #ffffff;
+}
+.content-login-img i{
+    font-size: 150px;
+    border: 5px solid white;
+    color: #ffffff;
+    border-radius: 100%;
+}
+.form-login{
+    margin-top: 20%;
+    padding: 30px;
+    border-bottom: 4px solid white;
+}
+.form-login div{
+    position: relative;
+    margin-top: 20px;
+}
+.login-icon{
+    position: absolute;
+    font-size: 35px;
+    color: #11B1E3;
+    top: 8px;
+    left: 4px;
+    cursor: text;
+    z-index: 1;
+}
+.input-login{
+    height: 50px;
+    width: 100%;
+    padding: 20px 0px 20px 44px;
+    border-radius: 10px;
+    border: none;
+}
+.input-login:focus{
+    outline: none;
+    scale: 1.1;
+    transition: 0.4s;
+}
+.login-showPassword{
+    position: absolute;
+    font-size: 25px;
+    color: #11B1E3;
+    right: 10px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.button-lupaPassword{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 10px 0px;
+}
+.div-button-login{
+    display: flex;
+    justify-content: center;
+}
+.button-login{
+    display: block;
+    border: none;
+    padding: 15px 60px;
+    font-weight: bolder;
+    background-color: white;
+    color: #11B1E3;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.button-login:hover{
+    box-shadow: 0px 0px 20px #ffffff;
+}
+.div-loginDaftar{
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.div-loginDaftar a{
+   text-decoration: none;
+   color: #7a7878;
+   font-weight: bold;
+   text-align: center;
+   padding: 10px;
+}
+.login-divKosong, .div-loginDaftar a{
+    width:33.3%;
+}
+.login-divKosong{
+    background-color: #11B1E3;
+    border-radius: 0% 100% 0% 100%;
+}
+.container-segitiga{
+position: relative;
+
+}
+.login-segitiga{
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 60px solid  #11B1E3;
+  box-shadow: 0px 0px 20px inset #ffffff;
+  animation: turunNaik 10s infinite ease;
+}
+
+#logo-login{
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 900;
+    color: white;
+    top: 0px;
+    left: 30%;
+    animation: turunNaik 10s infinite ease;
+}
+
+@keyframes turunNaik {
+    0%{
+        transform: translateY(-60%);
+    }
+    20%{
+        transform: translateY(-60%);
+    }
+    30%{
+        transform: translateY(0%);
+    }
+    40%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    60%{
+        transform: translateY(0%);
+    }
+    70%{
+        transform: translateY(0%);
+    }
+    80%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(-60%);
+    }
+
+}
+/* lupa password */
+.icon-lupaPw{
+    font-size: 110px !important;
+    padding: 10px 10px 20px;
+}
+.div-lupaPassword p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.div-kembali{
+    text-align: center;
+    margin: 50px 0px;
+}
+.div-kembali a{
+    color: white;
+    text-decoration: none;
+}
+.div-kembali a:hover .kembali-login{
+    box-shadow: 0px 0px 20px #ffffff;
+}
+.div-kembali a .kembali-login{
+   color: #11B1E3;
+   background-color: #ffffff;
+   border-radius: 5px;
+   padding: 2px;
+   cursor: pointer; 
+}
+
+@media screen and (max-width: 375px){
+    .container-login{
+        width: 100%;
+        
+    }
+    .content-login-img {
+        width: 50%;
+        left: 26%;
+        top: 20px;
+        border-bottom:unset;
+        background-color:unset;
+        padding: 0px;
+        border-radius: 100%;
+        box-shadow: none;
+    }
+    .content-login-img i{
+        font-size: 80px;
+    }
+    .div-lupaPassword{
+        margin-top: 80px !important;
+    }
+    
+}

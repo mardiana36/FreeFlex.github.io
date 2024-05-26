@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasang Job</title>
+    <script src="library/jquery.js"></script>
+    <script src="functionJq.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styleUmum.css">
+    <link rel="stylesheet" href="css/pasangJob.css">
+</head>
+<body>
+    <section class="section-job1">
+    </section>
+    <section class="section section-job2">
+        <div class="container-job">
+            <div class="content-job1">
+                <a id="logoJob" href="index.html">FreeFlex</a>
+                <p class="judul-job1">Apakah Anda siap untuk menghadirkan ide brilian Anda ke dunia nyata?</p>
+                <p class="text-job1">Tim freelancer kami siap membantu Anda mewujudkannya. Pasang job sekarang dan nikmati perubahan luar biasa yang kami tawarkan untuk proyek Anda!</p>
+            </div>
+            <div class="content-job2">
+                <form action="" id="formPasangJob">
+                    <label for="judulProyek">Judul Proyek</label>
+                    <input type="text" id="judulProyek" placeholder="Masukan judul proyek anda" required>
+                    <label for="deskripsiJob">Deskripsi</label>
+                    <textarea name="deskripsiJob" id="deskripsiJob" placeholder="jelaskan tentang proyek anda di sini..." required></textarea>
+                    <label for="katagoriJob">Katagori</label>
+                    <select name="katagoriJob" id="katagoriJob">
+                        <option hidden value=""></option>
+                        <option value="1">Graphics & Design</option>
+                        <option value="2">Web & Pemrograman</option>
+                        <option value="3">Digital Marketing</option>
+                        <option value="4">Video, Fotografi & Audio</option>
+                        <option value="5">Penulisan & Penerjemahan</option>
+                    </select>
+                   <div class="divSubkatagori">
+                    <select name="subkatagoriJob" id="subkatagoriJob">
+                        <option hidden value=""></option>
+                        <option value="1dl">Desain Logo</option>
+                        <option value="1dg">Desain Grafis</option>
+                        <option value="2ad">Aplikasi Desktop</option>
+                        <option value="2pw">Pembuatan Website</option>
+                        <option value="3am">Affiliate Marketing</option>
+                        <option value="3bm">Blogger Marketing</option>
+                        <option value="4ev">Edit Video</option>
+                        <option value="4ef">Edit Foto</option>
+                        <option value="5bpe">Buku & Penulisan E-Book</option>
+                        <option value="5pb">Penerjemah bahasa</option>
+                    </select>
+                    <label for="subkatagoriJob" id="p-subkatagori">Subkatagori</label>
+                   </div>
+                    <label id="labelHarga" for="">Bagaimana Anda ingin membayar?</label>
+                    <input id="radioHarga1" hidden name="radioHarga" type="radio"  value="">
+                    <input id="radioHarga2" hidden name="radioHarga" type="radio"  value="">
+                    <div id="bayarJob">
+                        <div id="hargaSendiri" class="divHarga">
+                            <div>
+                                <img  src="Sang Putu Mardiana_Bahan/hargaSendiri.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="judul-jobHarga">Tentukan harga sendiri</p>
+                                <p class="text-jobHarga">Berikan harga sesuai dengan yang anda inginkan untuk menyelesaikan proyek ini.</p>
+                            </div>
+                        </div>
+                        <div id="hargaFreelancer" class="divHarga">
+                            <div>
+                                <img src="Sang Putu Mardiana_Bahan/hargaFreelancer.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="judul-jobHarga">Penawaran Freelancer</p>
+                                <p class="text-jobHarga">Berikan harga sesuai dengan yang freelancer tawarkan kepada anda untuk menyelesaikan proyek ini.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divHargaJob">
+                        <label for="hargaJob">Harga</label>
+                        <input type="text" name="hargaJob" id="hargaJob" placeholder="Masukan harga proyek anda" required>
+                    </div>
+                    <label for="tglPasangJob">Tanggal pasang job</label>
+                    <input type="date" id="tglPasangJob" required>
+                    <label for="tglHapusJob">Tanggal hapus job</label>
+                    <input type="date" id="tglHapusJob" required>
+                    <button type="submit" id="buttonPasangJob" form="formPasangJob">Pasang Job</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

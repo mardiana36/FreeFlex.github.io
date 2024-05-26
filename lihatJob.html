@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lihat Job</title>
+    <script src="library/jquery.js"></script>
+    <script src="functionJq.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styleUmum.css">
+    <link rel="stylesheet" href="css/lihatJob.css">
+</head>
+
+<body>
+    <script src="navbar.js"></script>
+    <section class="section section1-lj">
+        <div class="container1-lj">
+            <div class="content1-lj">
+                <div class="divJudulKatagori-lj">
+                    <p class="katagoriJudul-lj">Katagori</p>
+                </div>
+                <div class="divSemuaKatagori-lj">
+                    <a href="">Semua Katagori</a>
+                </div>
+                <div class="divKatagori-lj">
+                    <a class="katagori-lj">Graphics & Design</a>
+                    <span>&#x25BD;</span>
+                    <ul class="ulSubkatagori-lj" id="ulSubkatagoriLj">
+                        <div>
+                            <li><a href="">Desain Logo</a></li>
+                            <li><a href="">Desain Grafis</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="divKatagori-lj">
+                    <a class="katagori-lj">Web & Pemrograman</a>
+                    <span>&#x25BD;</span>
+                    <ul class="ulSubkatagori-lj" id="ulSubkatagoriLj">
+                        <div>
+                            <li><a href="">Aplikasi Desktop</a></li>
+                            <li><a href="">Pembuatan Website</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="divKatagori-lj">
+                    <a class="katagori-lj">Digital Marketing</a>
+                    <span>&#x25BD;</span>
+                    <ul class="ulSubkatagori-lj" id="ulSubkatagoriLj">
+                        <div>
+                            <li><a href="">Blogger Marketing</a></li>
+                            <li><a href="">Affiliate Marketing</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="divKatagori-lj">
+                    <a class="katagori-lj">Video, Fotografi & Audio</a>
+                    <span>&#x25BD;</span>
+                    <ul class="ulSubkatagori-lj" id="ulSubkatagoriLj">
+                        <div>
+                            <li><a href="">Edit Video</a></li>
+                            <li><a href="">Edit Foto</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="divKatagori-lj">
+                    <a class="katagori-lj">Penulisan & Penerjemahan</a>
+                    <span>&#x25BD;</span>
+                    <ul class="ulSubkatagori-lj" id="ulSubkatagoriLj">
+                        <div>
+                            <li><a href="">Buku & Penulisan E-Book</a></li>
+                            <li><a href="">Penerjemah bahasa</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="content2-lj">
+                <div class="divContent2Lj-1">
+                    <form action="" id="formSearchLj">
+                        <input type="search" name="" id="searchLj" placeholder="Cari job...">
+                        <button type="submit" form="formSearchLj">Cari</button>
+                    </form>
+                    <div class="divSortir-lj">
+                        <span>Sortir:</span>
+                        <span class="dropSortir-lj">Terbaru</span><span class="iconDrop">&#x25BD;</span>
+                        <ul class="ulSortir-lj">
+                            <li><a href="#">Terbaru</a></li>
+                            <li><a href="#">Akan Berakir</a></li>
+                            <li><a href="#">Budge Tertinggi</a></li>
+                            <li><a href="#">Budge Terendah</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="divJumlah-lj">
+                    <div>
+                        <span><span class="spanTotalJob">100</span> Jobs</span>
+                    </div>
+                    <div class="nomorHalaman-lj">
+                        <a id="PreviousLj" href="">&#171;Prev</a>
+                        <a class="nomor-lj" href="">1</a>
+                        <a class="nomor-lj" href="">2</a>
+                        <a class="nomor-lj" href="">3</a>
+                        <a id="nextLj" href="">Next &#187;</a>
+                    </div>
+                </div>
+                <div class="containerContent-job">
+                    <div class="divContent-job">
+                        <div class="imgJudul-lj">
+                            <li class="bx bx-desktop"></li>
+                        </div>
+                        <div class="judulContent-lj">
+                            <h3>Technical SEO Audit & Fixing</h3>
+                            <a href="">Web & Pemrograman / Programming Web</a>
+                        </div>
+                        <div class="div-lj">
+                            <div>
+                                <i class='bx bx-money'></i>
+                                <span>IDR 2,000,000</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-calendar'></i>
+                                <span>2 Hari lagi</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-id-card'></i>
+                                <span>6 Pelamar</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-user-check'></i>
+                                <span>Masih memilih</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divContent-job">
+                        <div class="imgJudul-lj">
+                            <li class="bx bx-desktop"></li>
+                        </div>
+                        <div class="judulContent-lj">
+                            <h3>Technical SEO Audit & Fixing</h3>
+                            <a href="">Web & Pemrograman / Programming Web</a>
+                        </div>
+                        <div class="div-lj">
+                            <div>
+                                <i class='bx bx-money'></i>
+                                <span>IDR 2,000,000</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-calendar'></i>
+                                <span>2 Hari lagi</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-id-card'></i>
+                                <span>6 Pelamar</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-user-check'></i>
+                                <span>Masih memilih</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divContent-job">
+                        <div class="imgJudul-lj">
+                            <li class="bx bx-desktop"></li>
+                        </div>
+                        <div class="judulContent-lj">
+                            <h3>Technical SEO Audit & Fixing</h3>
+                            <a href="">Web & Pemrograman / Programming Web</a>
+                        </div>
+                        <div class="div-lj">
+                            <div>
+                                <i class='bx bx-money'></i>
+                                <span>IDR 2,000,000</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-calendar'></i>
+                                <span>2 Hari lagi</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-id-card'></i>
+                                <span>6 Pelamar</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-user-check'></i>
+                                <span>Masih memilih</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divContent-job">
+                        <div class="imgJudul-lj">
+                            <li class="bx bx-desktop"></li>
+                        </div>
+                        <div class="judulContent-lj">
+                            <h3>Technical SEO Audit & Fixing</h3>
+                            <a href="">Web & Pemrograman / Programming Web</a>
+                        </div>
+                        <div class="div-lj">
+                            <div>
+                                <i class='bx bx-money'></i>
+                                <span>IDR 2,000,000</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-calendar'></i>
+                                <span>2 Hari lagi</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-id-card'></i>
+                                <span>6 Pelamar</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-user-check'></i>
+                                <span>Masih memilih</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divContent-job">
+                        <div class="imgJudul-lj">
+                            <li class="bx bx-desktop"></li>
+                        </div>
+                        <div class="judulContent-lj">
+                            <h3>Technical SEO Audit & Fixing</h3>
+                            <a href="">Web & Pemrograman / Programming Web</a>
+                        </div>
+                        <div class="div-lj">
+                            <div>
+                                <i class='bx bx-money'></i>
+                                <span>IDR 2,000,000</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-calendar'></i>
+                                <span>2 Hari lagi</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-id-card'></i>
+                                <span>6 Pelamar</span>
+                            </div>
+                            <div>
+                                <i class='bx bx-user-check'></i>
+                                <span>Masih memilih</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,607 @@
+/* digunakan di seluruh halaman */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 10px; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+.section {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+/* style navbar semua halaman*/
+.container-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    z-index: 1000;
+    width: 100vw;
+    background-color: #ffffff;
+    border-bottom: 1px solid #CAC5C5;
+}
+.container-nav >div{
+    width: 100vw;
+}
+.div-nav{
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}
+.card-nav {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.card-nav li:not(.li-input) {
+    padding: 0 20px;
+}
+
+.card-nav li a {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #11B1E3;
+}
+
+.input-nav {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #4d4d4d;
+}
+
+.li-input {
+    position: relative;
+}
+.icon-search{
+    font-size: 32px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    color: #ffffff;
+}
+.tombol-searchNav {
+    background-color: #11B1E3 ;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+.tombol-searchNav:hover{
+    background-color: #0e7ea0;
+}
+.icon-search:hover {
+    animation: search 2s infinite ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes search {
+
+    20% {
+        top: 0%;
+        left: 0%;
+    }
+
+    40% {
+        top: 0%;
+        left: 25%;
+    }
+
+    60% {
+        top: 25%;
+        left: 25%;
+    }
+
+    80% {
+        top:25%;
+        left: 0%;
+    }
+
+}
+.pasang-job {
+    padding: 10px;
+    border-radius: 5px;
+    color: white !important;
+    background-color: #FF7A00;
+}
+
+.pasang-job:hover {
+    background-color: #d86901 !important;
+}
+
+#drop-daftar {
+    display: none;
+    position: absolute;
+    width: max-content;
+    left: -5vw;
+    top: 50px;
+    border: 1px solid #CAC5C5;
+    background-color: #ffffff;
+}
+
+#drop-daftar li {
+    list-style-type: none;
+    cursor: pointer;
+}
+#drop-daftar li a{
+    display: block;
+    padding: 10px;
+}
+
+#drop-daftar li:hover {
+    background-color: #11b2e33a;
+}
+
+#daftar {
+    cursor: pointer;
+}
+
+#menu i, #close-menu i {
+    font-size: 45px;
+    color: #11B1E3;
+
+}
+
+#menu, #close-menu {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+/* digunakan di home dan katagori jasa */
+.container-card {
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    padding: 2px;
+    flex-wrap: nowrap;
+}
+
+.div-card {
+    background-color: #ffffff;
+    min-width: 24.3%;
+    overflow: hidden;
+    border: 1px solid #CAC5C5;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.div-card:hover{
+    outline: 2px solid #11B1E3;
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+}
+.card2 {
+    display: flex;
+    align-content: center;
+    padding: 5px;
+    border-top: 1px solid #CAC5C5;
+    gap: 10px;
+}
+
+.card2-img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.card2-img img {
+    display: inline-block;
+    width: 100%;
+    max-height: 100%;
+}
+.card-judul{
+    height: 50px;
+}
+.div-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.div-card .card-img {
+    font-size: 25px;
+    color: #f3b714;
+}
+
+.card-reting {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    top: -5px;
+    left: 0px;
+}
+
+.card-comment {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    color: #959393;
+}
+#p-respon {
+    color: #959393;
+}
+.card-p {
+    display: block;
+    text-align: right;
+    color: #959393;
+
+}
+.card-harga {
+    display: block;
+    text-align: right;
+    color: #11B1E3;
+}
+.div-content{
+    position: relative;
+}
+#left-button, #right-button {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+   background-color: #ffffff98;
+   border: 3px solid #CAC5C5;
+   z-index: 1;
+}
+#left-button i, #right-button i {
+    font-size: 40px;
+    color: #CAC5C5;
+}
+#left-button:hover, #right-button:hover {
+    border: unset;
+    background-color: #11B1E3;
+    border-radius: 100%;
+}
+#left-button:hover i, #right-button:hover i{
+    color: #ffffff;
+}
+
+#left-button{
+    left: -20px;
+    top: 155px;
+}
+#right-button{
+    right: -20px;
+    top: 155px;
+}
+.card2 div a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* digunakan di halaman lihat job dan katagori jasa */
+.section1-lj{
+    justify-content: center;
+}
+.container1-lj{
+    margin-top: 100px;
+    width: 80vw;
+    display: flex;
+    gap: 20px;
+}
+.content1-lj{
+   width: 300px;
+   height: max-content;
+   background-color: #ffffff;
+}
+.divJudulKatagori-lj{
+    text-align: center;
+    padding: 10px;
+    background-color: #0B5268;
+    color: #ffffff;
+}
+.katagoriJudul-lj{
+    font-size: 1.5rem;
+}
+
+.divSemuaKatagori-lj,.divKatagori-lj,.divJudulKatagori-lj{
+    position: relative;
+    outline: 1px solid #0B5268;
+}
+.divSemuaKatagori-lj{
+    background-color: #0b526842;
+}
+.divSemuaKatagori-lj a,.divKatagori-lj a{
+   text-decoration: none;
+   color: #0B5268;
+   cursor: pointer;
+}
+.divSemuaKatagori-lj >a,.divKatagori-lj >a{
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+}
+.divKatagori-lj span{
+  color: #0B5268;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.ulSubkatagori-lj{
+    position: relative;
+    display: none;
+}
+.ulSubkatagori-lj li{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.divJumlah-lj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.spanTotalJob{
+    display: inline-block;
+    color: #343434;
+}
+.divJumlah-lj span:not(.spanTotalJob){
+    color: #aaaaaa;
+    font-weight: 800;
+}
+.nomorHalaman-lj a{
+    display: inline-block;
+    text-decoration: none;
+    color: #11B1E3;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid #11B1E3;
+    margin: 2px 0px;
+}
+.aktifNo-lj{
+    background-color: #11B1E3;
+    color: #ffffff !important;
+}
+
+
+/* style footer di semua halaman*/
+.divlogo-footer a{
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    color: #11B1E3 !important;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-weight: 600;
+    width: 150px;
+}
+.divlogo-footer a i{
+    font-size: 40px;
+    display: block;
+}
+#logo-footer{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.section-footer,.section2-footer{
+    
+    justify-content: center;
+    bottom: -0vh;
+}
+.section-footer{
+    margin-top: auto;
+    background-color: #11B1E3;
+}
+.container-footer,.container2-footer{
+    width: 80vw;
+    color: #ffffff;
+}
+.content1-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content1-footer{
+    justify-content: space-around;
+}
+.content1-footer div{
+    width: max-content;
+    flex: 20%;
+    padding: 20px;
+}
+.content1-footer div h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+.content1-footer div a{
+    display: block;
+    white-space: nowrap;
+    line-height:25px;
+}
+.container-footer div a,.container2-footer div a{
+  text-decoration:none;
+  color: #ffffff;
+}
+.section2-footer{
+    background-color: #0B5268;
+}
+.container2-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container2-footer div{
+   border-left: 1px solid #ffffff;
+   padding: 10px;
+}
+.container2-footer div a i{
+    font-size: 30px;
+}
+
+
+@media screen and (min-width:1440px){
+   .container-nav >div{
+    width: 1440px;
+   }
+    .container1-lj{
+        width: 1220px;
+    }
+    .section > div{
+        width: 1220px;
+    }
+    
+}
+
+@media screen and (max-width: 1197px) {
+    .div-nav {
+        padding: 10px;
+    }
+
+    .mobile {
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .input-nav {
+        width: fit-content;
+    }
+
+    .input-nav::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .drop-mobile {
+        list-style-type: none;
+        position: absolute;
+        background-color: #ffffff;
+        padding: 20px;
+        left: -10px;
+        white-space: normal;
+        top: 55px;
+        max-width: 250px;
+        box-shadow: 5px 5px 5px #00000049;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .drop-mobile li {
+        margin: 10px 0 20px;
+
+    }
+
+    .drop-mobile li:not(.li-input) {
+        padding: 10px 30px;
+        cursor: pointer;
+
+    }
+
+    .drop-mobile li a {
+        font-size: 1rem;
+
+    }
+
+    .login {
+        border-top: 1px solid #CAC5C5;
+    }
+
+    .li-input {
+        margin-bottom: 40px !important;
+    }
+
+    #daftar-mobile {
+        border-bottom: 1px solid #CAC5C5;
+    }
+
+    #more-nav {
+        display: inline-block;
+        position: relative;
+        right: -120px;
+
+    }
+
+    #drop-daftar-mobile li {
+        list-style-type: none;
+    }
+    #drop-daftar-mobile li a{
+        display: block;
+        padding: 10px;
+    }
+
+    #drop-daftar-mobile li:hover {
+        border-bottom: 2px solid #11B1E3;
+    }
+    .div-card{
+        min-width: 32%;
+        
+    }
+
+}
+
+@media screen and (max-width: 611px) {
+    #logo {
+        font-size: 1.5rem;
+    }
+
+    .pasang-job {
+        font-size: 0.8rem !important;
+    }
+
+    #menu, #close-menu {
+        width: 25px;
+        height: 44.5px;
+        border: none;
+        background-color: #ffffff;
+    }
+
+    .card-nav li:not(.li-input) {
+        padding: 0;
+    }
+    .div-card{
+        min-width: 100%;
+    }
+}

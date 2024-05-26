@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Client</title>
+    <script src="library/jquery.js"></script>
+    <script src="functionJq.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styleUmum.css">
+    <link rel="stylesheet" href="css/daftar.css">
+</head>
+<body>
+    <script src="navbar.js"></script>
+    <section class=" section section-daftar1">
+        <div class="container-daftar1">
+            <div class="daftar-container-img">
+                <img src="Sang Putu Mardiana_Bahan/client.png" alt="">
+            </div>
+            <div class="container-daftar-form">
+                <p class="judul-daftar">Daftar Sebagai Klien</p>
+                <form action="" id="form-daftar">
+                    <label for="daftar-username">Username</label>
+                    <input type="text" id="daftar-username" placeholder="Username" required>
+                    <label for="daftar-email">Email</label>
+                    <input type="email" id="daftar-email" placeholder="Email" required>
+                    <label for="daftar-password">Password</label>
+                    <div class="div-daftarPw">
+                        <input type="password" id="daftar-password" placeholder="Password" required>
+                        <i class="bx bxs-hide" id="daftar-showPw"></i>
+                    </div>
+                    <label for="daftar-kodeNegara">Kode Negara</label>
+                    <select name="" id="daftar-kodeNegara">
+                        <option value="+1">Amerika Serikat (+1)</option>
+                        <option value="+61">Australia (+61)</option>
+                        <option value="+55">Brasil (+55)</option>
+                        <option value="+86">China (+86)</option>
+                        <option value="+44">Inggris (+44)</option>
+                        <option selected value="+62">Indonesia (+62)</option>
+                        <option value="+81">Jepang (+81)</option>
+                        <option value="+91">India (+91)</option>
+                        <option value="+33">Prancis (+33)</option>
+                    </select>
+                    <div class="div-daftar-telepon">
+                        <input type="tel" id="daftar-telepon" placeholder="Nomor Ponsel" required><span>Nomor Ponsel</span>
+                    </div>
+                    <div class="div-daftar-button"><button type="submit" class="button-daftar" form="form-daftar">Buat Akun</button></div>
+                </form>
+                <p class="daftar-login">Sudah punya akun?<a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+.section1-profile{
+    justify-content: center;
+    margin-bottom: 40px;
+}
+body{
+    background-color: #f2ebeb;
+}
+.container-profile{
+    margin-top: 100px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.content1-profile{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.divFoto-profile{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.divFoto-profile > div{
+    padding: 10px;
+    text-align: center;
+}
+.divFoto-profile img{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 100%;
+}
+.divFoto-profile h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.divFoto-profile p{
+    color: #939393;
+}
+.divStar-profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #fbab00;
+    font-weight: bold;
+}
+.divData-profile{
+    margin-top: 5px;
+    border-top: 3px solid #f2ebeb;
+    display: flex;
+    justify-content: center;
+}
+.data-profile td{
+    text-align: left;
+    padding: 5px 0px;
+}
+.data-profile td:nth-child(2){
+    text-align: right;
+    color: #11B1E3;
+}
+.divDeskripsi-profile{
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.divDeskripsi-profile > div:not(.divDeskripsi-profile > div:nth-child(1)){
+    margin-top: 20px;
+    border-top: 3px solid #f2ebeb;
+    padding-top: 10px;
+}
+.divDeskripsi-profile h3{
+    padding-bottom: 10px;
+    color: #11B1E3;
+}
+.divPengalamanKrj div{
+    display: inline-block;
+    border: 1px solid #939393;
+    padding: 5px;
+    border-radius: 10px;
+}
+.divPengalamanKrj div p{
+    font-size: 0.8rem;
+}
+.keahlian span{
+    display: inline-block;
+    padding: 5px;
+    outline: 1px solid #939393;
+    margin: 3px 0px;
+    border-radius: 5px;
+}
+.content2-profile{
+    width: 60%;
+}
+.content2-profile > div{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.content2-profile >div:nth-child(1){
+    margin-bottom: 10px;
+}
+.content2-profile h3{
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.container-card{
+    flex-wrap: wrap;
+}
+.div-card{
+  max-width: 49%;
+}
+.ulasan-provile h3,h4{
+    color: #11B1E3;
+}
+.ulasan-provile >div{
+    padding: 10px;
+    outline: 1px solid #d9d9d9;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.ulasan{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.ulasan-provile i{
+    font-size: 40px;
+    color: #11B1E3;
+}
+.tglUlasan{
+    color: #939393;
+}
+.bintangUlasan{
+    width: 100%;
+    text-align: right;
+    font-size: 20px !important;
+    color: #fbab00 !important;
+}
+.ulasan span{
+    font-weight: bold;
+}
+@media screen and (max-width:1134px){
+    .content1-profile{
+        width:100%;
+        flex-direction: row;
+    }
+    .divDeskripsi-profile{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .content2-profile{
+        width: 100%;
+    }
+    .div-card{
+    }
+}
+@media screen and (max-width:650px){
+    .content1-profile{
+        flex-direction: column;
+    }
+    .divDeskripsi-profile{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
+

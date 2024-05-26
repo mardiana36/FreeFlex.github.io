@@ -1,0 +1,85 @@
+body{
+    background-color: #f2ebeb;
+}
+.section1-lj {
+    justify-content: center;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+}
+
+.container1-lj {
+    display: block;
+    width: inherit;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.content1-lj {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.divJudulKatagori-lj {
+    flex: 100%;
+}
+.divJudulKatagori-lj p{
+    font-weight: bold;
+}
+
+.divSemuaKatagori-lj, .divKatagori-lj {
+    flex: 10%;
+}
+
+.divSemuaKatagori-lj>a, .divKatagori-lj>a {
+    padding: 5px 20px;
+}
+
+.divKatagori-lj span {
+    right: 5px;
+    top: 5px;
+}
+
+.ulSubkatagori-lj div {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100vw - 40vw);
+}
+
+.ulSubkatagori-lj li {
+    flex: 20%;
+}
+
+.contain1-kj{
+    flex: 100%;
+    text-align: left;
+}
+.contain1-kj h3{
+    font-size: 1.5rem;
+}
+
+.container-card {
+   flex-wrap: wrap;
+    gap: 10px;
+}
+
+.div-card {
+    flex: 20%;
+    max-width: 24%;
+}
+@media screen and (max-width:1134px){
+    .div-card{
+       flex: 30%;
+    }
+}
+@media screen and (max-width:650px){
+    .div-card{
+       flex: 40%;
+    }
+}
+@media screen and (max-width:450px){
+    .div-card{
+       flex: 100%;
+    }
+}

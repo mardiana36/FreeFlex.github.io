@@ -1,0 +1,236 @@
+.header{
+    display: flex;
+    top: 20px;
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+}
+.content-header{
+    position: relative;
+    top: 120px;
+}
+.content-header p{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+   
+}
+.content-header .text-p{
+    font-size: 1.3rem;
+}
+.div-sentence{
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 60px;
+}
+.div-sentence .sentence {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.blinking {
+    font-size: 4rem;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.content-header .button-header{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #FF7A00;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.content-header .button-header:hover{
+   transform: scale(1.1);
+   transition: 0.6s ease-in-out;
+}
+.section-home1{
+    justify-content: center;
+    top: -50px;
+}
+.content-home1{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px #00000049 ;
+    border-radius: 10px;
+    gap: 10px;
+    
+}
+.content-home1 div{
+    margin: 10px 0px;
+}
+.content-home1 div i{
+    font-size: 60px;
+    color:  #828282;
+    position: relative;
+    display: block;
+}
+
+.content-home1 div a{
+    text-decoration: none;
+    color: #828282;
+}
+.content-home1 div a:hover i{
+    transform: translateY(-10%);
+    color: #11B1E3;
+}
+.section-home2{
+    justify-content: center;
+    transform: translateX();
+}
+.content-home2{
+    width: 80vw;
+}
+.div-judulHome2{
+    padding: 0px 0px 20px;
+}
+.div-judulHome2 p,.home3-judul1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.section-home3,.section-home4{
+    justify-content: center;
+    margin-top: 40px;
+}
+.section-home3{
+    background-color: #0B5268;
+}
+.container-home3{
+    width: 80vw;
+    padding: 40px;
+    border-radius: 40px;
+    outline: 20px solid #ffffff;
+    outline-offset: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+.contentHome3{
+    width: 50%;
+    padding: 20px;
+    color: #ffffff;
+}
+.contentHome3 > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contentHome3 div:nth-child(2){
+    padding: 10px 0px;
+}
+.home3-judul2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.home3-judul3{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.home3-checklist{
+    font-size: 50px;
+    color: #11B1E3;
+}
+.home3-img{
+    width: 100%;
+}
+
+.container-home4-1{
+    padding: 20px 0px;
+    width: 80vw;
+}
+.container-home4-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.home4-content {
+    text-align: center;
+}
+.home4-content img{
+    padding: 30px;
+    width: 350px;
+    border-radius: 100%;
+    box-shadow : 0px -25px 30px inset #11B1E3;
+    
+}
+.section-home5{
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0px;
+}
+.container-home5{
+    width: 80vw;
+}
+.content-home5{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+.content-home5 div{
+   overflow: hidden;
+   border-radius: 100%;
+   border: 5px solid #ffffff;
+   width: 20%;
+}
+.content-home5 div:not(.div-img-home5){
+  margin: 0px 5%;
+}
+.img-home5 {
+    width: 100%;
+    object-fit: fill;
+}
+.div-img-home5{
+    position: absolute;
+}
+.home5-hubungi{
+    color: #11B1E3;
+}
+ 
+@media screen and (max-width: 665px) {
+    .div-sentence .sentence {
+        font-size: 2.5rem;
+    }   
+    
+    .content-header .text-p{
+        font-size: 1rem;
+    }
+    .content-header p{
+        font-size: 1.5rem;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .blinking {
+        font-size: 3rem;
+        animation: blink 0.8s infinite;
+    }
+    .div-judulHome2 p,.home3-judul1{
+        font-size: 1.5rem;
+    }
+    .contentHome3{
+        width: 100%;
+    }
+    .container-home4-2{
+        flex-wrap: wrap;
+    }
+}
